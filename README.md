@@ -9,14 +9,7 @@ An IoT-based security system designed to enhance ATM security by integrating sen
 - **Real-Time Alerts**: Notifications and alerts sent via Flask server integration.
 - **Live Monitoring**: Remote camera feed accessible through the server.
 - **Voice-Controlled Automation**: Integrated with Google Assistant for advanced control.
-
----
-
-## System Architecture
-[Add a brief description of the architecture here, e.g., "The system leverages an Arduino Uno microcontroller, Flask server, and Google Assistant for end-to-end security and monitoring."]
-
-![System Architecture](./images/system_architecture.png)
-
+- 
 ---
 
 ## Components Used
@@ -40,3 +33,11 @@ An IoT-based security system designed to enhance ATM security by integrating sen
 1. Clone this repository:
    ```bash
    git clone https://github.com/kalyansai15/Centralized_ATM_Security_System.git
+
+2. Install the required Python libraries:
+   ```bash
+   pip install -r requirements.txt
+
+3. Run the Flask server:
+   ```bash
+   python app.py
