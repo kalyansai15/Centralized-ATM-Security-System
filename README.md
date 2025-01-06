@@ -31,7 +31,8 @@ Additional components include:
 
 ## Prototype
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/dd4317ae-80dd-4bd4-8e98-a2f4c44b9c4a)
+
 
 
 ---
