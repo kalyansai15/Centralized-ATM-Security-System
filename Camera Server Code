@@ -1,0 +1,23 @@
+from flask import Flask
+import cv2
+
+app = Flask(__name__)
+
+@app.route('/open_camera', methods=['GET'])
+def open_camera():
+    cap = cv2.VideoCapture(0)
+    if not cap.isOpened():
+        return "Failed to open camera", 500
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+        cv2.imshow('Camera', frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    cap.release()
+    cv2.destroyAllWindows()
+    return "Camera closed", 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
